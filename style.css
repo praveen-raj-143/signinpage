@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/023/740/386/non_2x/medicine-doctor-with-stethoscope-in-hand-on-hospital-background-medical-technology-healthcare-and-medical-concept-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: italic;
+}
+.mainbox{
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    /* padding: 30px; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    align-self: center;
+    width: 400px;
+    height: 350px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    animation: compa;
+    animation-duration: 2s;
+    background-color: white;
+}
+.textfeild{
+    width: 150px;
+    height: 30px;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    background-color: rgba(240, 248, 255, 0);
+}
+.head{
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+   background-color: rgb(29, 133, 218);
+   color: white;
+}
+.btn{
+    background-color: rgb(29, 133, 218);
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: rgba(58, 57, 57, 0.692);
+}
+.navitems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(29, 133, 218);
+    color: white;
+}
+.item{
+    margin: 10px;
+}
+.title{
+    /* padding: 20px; */
+    /* margin: auto; */
+    /* border-radius: 20px; */
+    /* text-align: center; */
+   background-color: rgb(29, 133, 218);
+   color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(29, 133, 218);
+    color: white;
+}
+.home{
+    background-image: url(https://media.istockphoto.com/id/695218436/photo/stethoscope-with-clipboard-and-laptop-on-desk-doctor-working-in-hospital-writing-a.jpg?s=612x612&w=0&k=20&c=Ye6nmTjzjdQHUmCzaOyw89f8tehePKKVBlfkmjJ3Giw=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 86.9vh;
+    /* margin-top: 10px; */
+}
+.done{
+    width: 400px;
+    height: 273px;
+    background-image: url(https://cdn.dribbble.com/users/28588/screenshots/3669080/holfuy_done_gifconvert.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: auto; */
+    border-radius: 20px;
+}
+.sign{
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+}
+@keyframes compa {
+    0%{
+        transform: translateZ(35%)scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateZ(0%)scale(1);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:765px){
+    .mainbox{
+        width: fit-content;
+        margin-top: 3px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .title{
+        font-size: larger;
+    }
+    .home{
+        height: 83.5vh;
+    }
+}
