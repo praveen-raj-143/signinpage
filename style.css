@@ -1,7 +1,7 @@
 body{
     margin: 0;
     height: 100vh;
-    background-image: url(https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?w=740&t=st=1707743541~exp=1707744141~hmac=b5cb2b1e9a2c2b6c38d3d873a1458e0852138b5c02735a47e1f48065ad353224);
+    background-image: url(https://media.istockphoto.com/id/695218436/photo/stethoscope-with-clipboard-and-laptop-on-desk-doctor-working-in-hospital-writing-a.jpg?s=612x612&w=0&k=20&c=Ye6nmTjzjdQHUmCzaOyw89f8tehePKKVBlfkmjJ3Giw=);
     background-repeat: no-repeat;
     background-size: cover;
     font-style: italic;
@@ -55,9 +55,13 @@ body{
     justify-content: space-around;
     background-color: rgb(29, 133, 218);
     color: white;
+    margin-right: 20px;
 }
 .item{
+    font-size: x-large;
     margin: 10px;
+    align-self: center;
+    cursor: pointer;
 }
 .title{
     /* padding: 20px; */
@@ -66,20 +70,65 @@ body{
     /* text-align: center; */
    background-color: rgb(29, 133, 218);
    color: white;
+   margin-left: 20px;
+   cursor: pointer;
 }
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(29, 133, 218);
     color: white;
 }
 .home{
-    background-image: url(https://media.istockphoto.com/id/695218436/photo/stethoscope-with-clipboard-and-laptop-on-desk-doctor-working-in-hospital-writing-a.jpg?s=612x612&w=0&k=20&c=Ye6nmTjzjdQHUmCzaOyw89f8tehePKKVBlfkmjJ3Giw=);
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.homechild{
+    border: 2px solid rgb(65, 61, 61);
+    width: 350px;
+    /* height: 510px; */
+}
+.childone{
+    background-image: url(https://www.medicalindependent.ie/wp-content/uploads/2023/06/27-6-23-medoc-legal.jpg);
     background-size: cover;
-    height: 86.9vh;
-    /* margin-top: 10px; */
+    background-repeat: no-repeat;
+    width: 470px;
+    height: 510px;
+}
+.childtwo{
+    background-color: white;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.childthree{
+    background-color: white;
+    font-size: x-large;
+    text-align: center;
+    align-self: center;
+}
+.childfour{
+    width: 300px;
+    height: 250px;
+    background-image: url(./checklist.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.textfeildf{
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    background-color: rgba(240, 255, 255, 0);
 }
 .done{
     width: 400px;
@@ -116,9 +165,21 @@ a{
         flex-direction: column;
     }
     .title{
-        font-size: larger;
+        font-size: x-large;
     }
     .home{
-        height: 83.5vh;
+
+        flex-direction: column;
     }
+    .homechild{
+        width: fit-content;
+    }
+    .childone{
+        width: 280px;
+        height: 300px;
+    }
+    .done{
+        width: 300px;
+    }
+    
 }
